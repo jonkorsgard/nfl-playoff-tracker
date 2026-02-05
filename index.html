@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoff Fantasy Tracker | Championship Weekend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stadium-lights"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🏈</div>
+                    <div class="logo-text">
+                        <h1>PLAYOFF FANTASY</h1>
+                        <span class="subtitle">TRACKER</span>
+                    </div>
+                </div>
+                <div class="week-badge">
+                    <span class="week-label">CHAMPIONSHIP WEEKEND</span>
+                    <span class="week-date">JAN 25-26, 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Matchup Score Banner -->
+            <section class="matchup-banner">
+                <div class="team-side team-1">
+                    <div class="team-name">TEAM 1</div>
+                    <div class="team-score" id="team1-score">0.00</div>
+                </div>
+                <div class="vs-divider">
+                    <span class="vs-text">VS</span>
+                </div>
+                <div class="team-side team-2">
+                    <div class="team-name">TEAM 2</div>
+                    <div class="team-score" id="team2-score">0.00</div>
+                </div>
+            </section>
+
+            <!-- Winner Banner -->
+            <div class="winner-banner hidden" id="winner-banner">
+                <div class="winner-content">
+                    <span class="trophy">🏆</span>
+                    <span class="winner-text" id="winner-text"></span>
+                </div>
+            </div>
+
+            <!-- Games Summary -->
+            <section class="games-grid">
+                <div class="game-card afc">
+                    <div class="game-header">
+                        <span class="conference-badge afc-badge">AFC</span>
+                        <span class="game-title">CHAMPIONSHIP</span>
+                    </div>
+                    <div class="game-matchup">
+                        <div class="game-team">
+                            <span class="team-name">Patriots</span>
+                            <span class="team-score">10</span>
+                        </div>
+                        <span class="at">@</span>
+                        <div class="game-team winner">
+                            <span class="team-name">Broncos</span>
+                            <span class="team-score">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card nfc">
+                    <div class="game-header">
+                        <span class="conference-badge nfc-badge">NFC</span>
+                        <span class="game-title">CHAMPIONSHIP</span>
+                    </div>
+                    <div class="game-matchup">
+                        <div class="game-team">
+                            <span class="team-name">Rams</span>
+                            <span class="team-score">27</span>
+                        </div>
+                        <span class="at">@</span>
+                        <div class="game-team winner">
+                            <span class="team-name">Seahawks</span>
+                            <span class="team-score">31</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Rosters -->
+            <section class="rosters-section">
+                <div class="roster-container">
+                    <!-- Team 1 Roster -->
+                    <div class="roster-card team-1-card">
+                        <div class="roster-header">
+                            <h2>TEAM 1 ROSTER</h2>
+                            <div class="total-points" id="team1-total">0.00 PTS</div>
+                        </div>
+                        <div class="roster-table">
+                            <table id="team1-table">
+                                <thead>
+                                    <tr>
+                                        <th>POS</th>
+                                        <th>PLAYER</th>
+                                        <th>TEAM</th>
+                                        <th class="stat-col">STATS</th>
+                                        <th class="pts-col">PTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="team1-tbody">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Team 2 Roster -->
+                    <div class="roster-card team-2-card">
+                        <div class="roster-header">
+                            <h2>TEAM 2 ROSTER</h2>
+                            <div class="total-points" id="team2-total">0.00 PTS</div>
+                        </div>
+                        <div class="roster-table">
+                            <table id="team2-table">
+                                <thead>
+                                    <tr>
+                                        <th>POS</th>
+                                        <th>PLAYER</th>
+                                        <th>TEAM</th>
+                                        <th class="stat-col">STATS</th>
+                                        <th class="pts-col">PTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="team2-tbody">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Performers -->
+            <section class="top-performers">
+                <h2 class="section-title">
+                    <span class="title-icon">⭐</span>
+                    TOP PERFORMERS
+                </h2>
+                <div class="performers-grid" id="performers-grid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>NFL Playoff Fantasy Tracker | Data updates automatically via ESPN API</p>
+            <p class="last-update">Last Updated: <span id="last-update">--</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

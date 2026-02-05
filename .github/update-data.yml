@@ -1,0 +1,56 @@
+name: Update Fantasy Data
+
+on:
+  schedule:
+    # Run every 15 minutes during typical NFL game times (Sun 1PM-11PM ET, Mon 8PM ET)
+    # This is in UTC, so adjust for your timezone
+    - cron: '*/15 * * * *'
+  
+  workflow_dispatch:  # Allows manual triggering from GitHub Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Generate website data
+        run: |
+          python generate_website_data.py
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet championship_results.json; then
+            echo "No changes detected"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add championship_results.json
+          git commit -m "📊 Auto-update: Championship data - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+      
+      - name: No updates needed
+        if: steps.check_changes.outputs.changed == 'false'
+        run: echo "✓ Data is already up to date"
