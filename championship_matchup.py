@@ -71,22 +71,22 @@ class ChampionshipMatchup:
         
         # Define the two teams
         self.team1 = {
-            'name': 'TEAM 1',
+            'name': "Jon Korsgard's Team",
             'roster': [
                 ('Drake Maye', 'QB', 'NE'),
-                ('RJ Harvey', 'RB', 'DEN'),
                 ('Kyren Williams', 'RB', 'LAR'),
+                ('RJ Harvey', 'RB', 'DEN'),
                 ('Puka Nacua', 'WR', 'LAR'),
                 ('Davante Adams', 'WR', 'LAR'),
                 ('Hunter Henry', 'TE', 'NE'),
-                ('Kayshon Boutte', 'WR', 'NE'),
+                ('Kayshon Boutte', 'FLEX', 'NE'),
                 ('Patriots D/ST', 'D/ST', 'NE'),
                 ('Jason Myers', 'K', 'SEA'),
             ]
         }
         
         self.team2 = {
-            'name': 'TEAM 2',
+            'name': "Dardan Ibraimi's Team",
             'roster': [
                 ('Matthew Stafford', 'QB', 'LAR'),
                 ('Kenneth Walker', 'RB', 'SEA'),
@@ -94,7 +94,7 @@ class ChampionshipMatchup:
                 ('Jaxon Smith-Njigba', 'WR', 'SEA'),
                 ('Courtland Sutton', 'WR', 'DEN'),
                 ('Colby Parkinson', 'TE', 'LAR'),
-                ('Stefon Diggs', 'WR', 'NE'),
+                ('Stefon Diggs', 'FLEX', 'NE'),
                 ('Seahawks D/ST', 'D/ST', 'SEA'),
                 ('Will Lutz', 'K', 'DEN'),
             ]
