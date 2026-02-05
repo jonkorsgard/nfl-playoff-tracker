@@ -1,65 +1,67 @@
 {
-  "generated_at": "2026-01-26T15:30:00",
+  "generated_at": "2026-02-05T12:48:44.660178",
   "weekend": "Conference Championships - Jan 25-26, 2026",
   "team1": {
-    "name": "TEAM 1",
+    "name": "Jon Korsgard's Team",
     "total_points": 150.54,
     "roster": [
       {
         "position": "QB",
         "name": "Drake Maye",
         "team": "NE",
-        "stats": "185 pass yds, 1 pass TD, 65 rush yds, 1 rush TD",
-        "points": 21.4
-      },
-      {
-        "position": "RB",
-        "name": "RJ Harvey",
-        "team": "DEN",
-        "stats": "37 rush yds, 4 rec, 22 rec yds",
-        "points": 9.9
+        "stats": "No stats",
+        "points": 19.94
       },
       {
         "position": "RB",
         "name": "Kyren Williams",
         "team": "LAR",
-        "stats": "2 rec, 22 rec yds, 1 TD",
-        "points": 10.2
+        "stats": "No stats",
+        "points": 18.1
+      },
+      {
+        "position": "RB",
+        "name": "RJ Harvey",
+        "team": "DEN",
+        "stats": "No stats",
+        "points": 9.9
       },
       {
         "position": "WR",
         "name": "Puka Nacua",
         "team": "LAR",
-        "stats": "11 rec, 153 rec yds, 1 TD",
-        "points": 36.3
+        "stats": "No stats",
+        "points": 40.9,
+        "rank": 2
       },
       {
         "position": "WR",
         "name": "Davante Adams",
         "team": "LAR",
-        "stats": "4 rec, 89 rec yds, 1 TD",
-        "points": 18.9
+        "stats": "No stats",
+        "points": 22.9
       },
       {
         "position": "TE",
         "name": "Hunter Henry",
         "team": "NE",
-        "stats": "6 rec, 54 rec yds",
-        "points": 11.4
+        "stats": "No stats",
+        "points": 3.2
       },
       {
         "position": "FLEX",
         "name": "Kayshon Boutte",
         "team": "NE",
-        "stats": "3 rec, 31 rec yds",
-        "points": 6.1
+        "stats": "No stats",
+        "points": 1.6
       },
       {
         "position": "D/ST",
         "name": "Patriots D/ST",
         "team": "NE",
         "stats": "7 PA, 3 sacks, 1 INT, 1 FR, 1 BLK",
-        "points": 27.0
+        "points": 27.0,
+        "rank": 4
       },
       {
         "position": "K",
@@ -71,56 +73,59 @@
     ]
   },
   "team2": {
-    "name": "TEAM 2",
+    "name": "Dardan Ibraimi's Team",
     "total_points": 153.66,
     "roster": [
       {
         "position": "QB",
         "name": "Matthew Stafford",
         "team": "LAR",
-        "stats": "374 pass yds, 3 pass TD, 16 rush yds",
-        "points": 45.56
+        "stats": "No stats",
+        "points": 45.56,
+        "rank": 1
       },
       {
         "position": "RB",
         "name": "Kenneth Walker",
         "team": "SEA",
-        "stats": "62 rush yds, 1 rush TD, 4 rec, 49 rec yds",
-        "points": 25.1
+        "stats": "No stats",
+        "points": 25.1,
+        "rank": 5
       },
       {
         "position": "RB",
         "name": "Rhamondre Stevenson",
         "team": "NE",
-        "stats": "71 rush yds",
+        "stats": "No stats",
         "points": 7.1
       },
       {
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "team": "SEA",
-        "stats": "10 rec, 153 rec yds, 1 rec TD",
-        "points": 40.3
+        "stats": "No stats",
+        "points": 40.3,
+        "rank": 3
       },
       {
         "position": "WR",
         "name": "Courtland Sutton",
         "team": "DEN",
-        "stats": "3 rec, 17 rec yds, 1 rec TD",
+        "stats": "No stats",
         "points": 14.7
       },
       {
         "position": "TE",
         "name": "Colby Parkinson",
         "team": "LAR",
-        "stats": "3 rec, 62 rec yds",
+        "stats": "No stats",
         "points": 9.2
       },
       {
         "position": "FLEX",
         "name": "Stefon Diggs",
         "team": "NE",
-        "stats": "5 rec, 17 rec yds",
+        "stats": "No stats",
         "points": 6.7
       },
       {
@@ -141,44 +146,44 @@
   },
   "top_performers": [
     {
-      "rank": 1,
       "position": "QB",
       "name": "Matthew Stafford",
       "team": "LAR",
-      "stats": "374 pass yds, 3 pass TD",
-      "points": 45.56
+      "stats": "No stats",
+      "points": 45.56,
+      "rank": 1
     },
     {
-      "rank": 2,
-      "position": "WR",
-      "name": "Jaxon Smith-Njigba",
-      "team": "SEA",
-      "stats": "10 rec, 153 rec yds, 1 rec TD",
-      "points": 40.3
-    },
-    {
-      "rank": 3,
       "position": "WR",
       "name": "Puka Nacua",
       "team": "LAR",
-      "stats": "11 rec, 153 rec yds, 1 rec TD",
-      "points": 36.3
+      "stats": "No stats",
+      "points": 40.9,
+      "rank": 2
     },
     {
-      "rank": 4,
+      "position": "WR",
+      "name": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "stats": "No stats",
+      "points": 40.3,
+      "rank": 3
+    },
+    {
       "position": "D/ST",
       "name": "Patriots D/ST",
       "team": "NE",
       "stats": "7 PA, 3 sacks, 1 INT, 1 FR, 1 BLK",
-      "points": 27.0
+      "points": 27.0,
+      "rank": 4
     },
     {
-      "rank": 5,
       "position": "RB",
       "name": "Kenneth Walker",
       "team": "SEA",
-      "stats": "62 rush yds, 1 rush TD, 4 rec, 49 rec yds",
-      "points": 25.1
+      "stats": "No stats",
+      "points": 25.1,
+      "rank": 5
     }
   ]
 }
